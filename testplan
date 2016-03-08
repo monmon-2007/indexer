@@ -1,0 +1,72 @@
+We have a test case:
+
+
+INPUTS:
+OpenMe directory contains:
+
+	folder	dirA 
+	file	fileb
+	file	filexx
+
+fileb contains:
+	plzmake me work 
+filexx contains:
+	plz work 
+
+
+dirA contains:
+	
+	folder	innerfold
+	file	filezxb ->contains: mina roberto names.dsfn 
+	file	finec	->contains: hi what up  
+
+innerfold contains:
+	file plzd ->contains: hope works 
+
+
+
+
+OUTPUT:
+{openMe
+		
+"dsfn":[
+	{"openMe/dirA/filezxb" : 1}
+]}	
+"hi":[
+	{"openMe/dirA/finec" : 1}
+]}	
+"hope":[
+	{"openMe/dirA/innerfold/plzd" : 1}
+]}	
+"me":[
+	{"openMe/fileb" : 1}
+]}	
+"mina":[
+	{"openMe/dirA/filezxb" : 1}
+]}	
+"names":[
+	{"openMe/dirA/filezxb" : 1}
+]}	
+"plz":[
+	{"openMe/filexx" : 1}
+]}	
+"plzmake":[
+	{"openMe/fileb" : 1}
+]}	
+"roberto":[
+	{"openMe/dirA/filezxb" : 1}
+]}	
+"up":[
+	{"openMe/dirA/finec" : 1}
+]}	
+"what":[
+	{"openMe/dirA/finec" : 1}
+]}	
+"work":[
+	{"openMe/filexx" : 1}
+	{"openMe/fileb" : 1}
+]}	
+"works":[
+	{"openMe/dirA/innerfold/plzd" : 1}
+]}
+}

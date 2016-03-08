@@ -9,5 +9,5 @@ We used recursion to open up the all sub directory along with the path so we can
 
 <h3>Project Partners<h3>
 
-Mina Gadallah
-Rob Merino
+<p>Mina Gadallah</p>
+<p>Roberto Merino</p>
